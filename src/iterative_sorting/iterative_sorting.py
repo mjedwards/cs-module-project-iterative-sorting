@@ -3,6 +3,8 @@ def selection_sort(arr):
     
     # loop through n-1 elements
     for i in range(0, len(arr) - 1):
+        print(len(arr))
+        print((len(arr) - 1))
         cur_index = i
         print("Current Index %s" %(cur_index))
         smallest_index = cur_index
@@ -18,7 +20,7 @@ def selection_sort(arr):
         arr[smallest_index], arr[cur_index] = arr[cur_index], arr[smallest_index]     
     return arr
 
-print(selection_sort([1,4,6,3,2]))
+# print(selection_sort([1,4,6,3,2]))
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr): 
     # Your code here
@@ -27,6 +29,9 @@ def bubble_sort(arr):
     for i in range(n):
         isSorted = True
         for x in range(n - i - 1):
+            print(n)
+            print(n- i)
+            print(n- i -1)
             if arr[x] > arr[x + 1]:       
                 arr[x], arr[x + 1] = arr[x + 1], arr[x]            
                 isSorted = False
@@ -35,6 +40,7 @@ def bubble_sort(arr):
 
     return arr
 
+# print(bubble_sort([1,4,6,3,2]))
 '''
 STRETCH: implement the Counting Sort function below
 
